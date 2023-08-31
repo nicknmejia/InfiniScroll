@@ -2,25 +2,32 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mister Quote!</title>
+        <title>InfiniScroll</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/svg+xml" href="https://www.google.com/s2/favicons?domain=www.google.com">
         <!-- Add font awesome CDN style link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Add google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <i class="fab fa-500px"></i>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
+        <h1>InfiniScroll</h1>
+        <h2>UNSPLASH API</h2>
+
+        <div class="loader" id="loader">
+            <img src="loader.svg" alt="loading">
+        </div>
+
+        <div class="image-container" id="image-container">
+        </div>
+        <script src="env.js"></script>
         <script src="script.js" async defer></script>
     </body>
 </html>
